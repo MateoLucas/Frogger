@@ -32,7 +32,10 @@
 #define BASE_D BUFFER_W/9//125
 #define FRAME_COUNT 500
 #endif
-
+#define BASE_POINTS 50
+#define TIME_POINTS 20
+#define FLY_POINTS 200
+#define LEVEL_POINTS 1000
 
 
 typedef struct{
