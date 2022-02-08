@@ -44,7 +44,7 @@ typedef struct{
 BASE* base_init(void);
 
 //Maneja la linea de llegada con las bases, la rana, la mosca y el cocodrilo
-bool finishline(BASE* bases, TIME* timer, FROG* frog, int level);
+bool finishline(BASE* bases, TIME* timer, FROG* frog, int level,bool* new_game);
 
 
 #endif /* FINISHLINE_H */
