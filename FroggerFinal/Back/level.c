@@ -79,19 +79,21 @@ void free_level_heap(LEVEL* level) {
 //Llama a los updates de los elementos
 bool level_update(LEVEL* level) 
 {
+    static bool new_game = true;
     bool ret = false;
     car_update(level->cars, level->caramount);
     log_update(level->logs, level->logamount, level->turtles, level->turtleamount);
     turtle_update(level->turtles, level->turtleamount);
     snek_update(level->sneks,level->logs,level->snekamount,level->shortlogamount,level->longlogamount);
     level->timer.countdown = get_countdown(level->timer);
-    if (finishline(level->bases, &(level->timer), level->frog, level->level)) {
+    if (finishline(level->bases, &(level->timer), level->frog, level->level, &new_game)) {
         free_level_heap(level);
         level->level+=1;
         level_init(level, level->level);
     }
     frog_update(level->turtles,level->frog, level->logs, level->cars,level->sneks,level->snekamount,level->caramount,level->logamount,level->turtleamount);
     if (level->frog->lives<=0||level->timer.countdown<=0) {
+        new_game = true;
         ret = true;
     }
     return ret;
