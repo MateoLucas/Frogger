@@ -25,13 +25,14 @@ BASE* base_init(void) {
 #define LEVEL_POINTS 1000
 //Devuelve falso a menos que haya una rana en todas las bases
 //Detecta las ranas en las bases y ubica las moscas y cocodrilos en las bases
-bool finishline(BASE* bases, TIME* timer, FROG* frog, int level) {
+bool finishline(BASE* bases, TIME* timer, FROG* frog, int level,bool* new_game) {
     bool ret=false;    
     static bool obj_active = false;
     static int framecount = FRAME_COUNT;
     static int count = 0;
     static int level_change=1;
-    if (level!=level_change) {
+    if (level!=level_change|| *new_game) {
+        *new_game = false;
         level_change=level;
         count=0;
     }
