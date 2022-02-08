@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>Front/Allegro/al_input.h</itemPath>
+      <itemPath>Front/Allegro/allegro.h</itemPath>
+      <itemPath>Back/cars.h</itemPath>
+      <itemPath>Front/Raspi/disdrv.h</itemPath>
+      <itemPath>Back/finishline.h</itemPath>
+      <itemPath>Back/frog.h</itemPath>
+      <itemPath>Back/frogger.h</itemPath>
+      <itemPath>Front/Raspi/joydrv.h</itemPath>
+      <itemPath>Back/level.h</itemPath>
+      <itemPath>Back/loadsave.h</itemPath>
+      <itemPath>Back/logs.h</itemPath>
+      <itemPath>Back/position.h</itemPath>
+      <itemPath>Front/Raspi/rasp_input.h</itemPath>
+      <itemPath>Front/Raspi/raspi.h</itemPath>
+      <itemPath>Front/Raspi/termlib.h</itemPath>
+      <itemPath>Back/timer.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>Resources/Lato-Regular.ttf</itemPath>
+      <itemPath>Resources/autolento.png</itemPath>
+      <itemPath>Resources/autopromedio.png</itemPath>
+      <itemPath>Resources/autorapido.png</itemPath>
+      <itemPath>Resources/background.jpeg</itemPath>
+      <itemPath>Resources/background.png</itemPath>
+      <itemPath>Resources/croc.png</itemPath>
+      <itemPath>Resources/croc2.png</itemPath>
+      <itemPath>Resources/croc3.png</itemPath>
+      <itemPath>Resources/duck.png</itemPath>
+      <itemPath>Resources/fly.png</itemPath>
+      <itemPath>Resources/frog.png</itemPath>
+      <itemPath>Resources/logcorto.png</itemPath>
+      <itemPath>Resources/loglargo.png</itemPath>
+      <itemPath>Resources/logmediano.png</itemPath>
+      <itemPath>Resources/logmuylargo.png</itemPath>
+      <itemPath>Resources/snek.png</itemPath>
+      <itemPath>Resources/sprite.png</itemPath>
+      <itemPath>Resources/truck.jpeg</itemPath>
+      <itemPath>Resources/turtledive1long.png</itemPath>
+      <itemPath>Resources/turtledive1short.png</itemPath>
+      <itemPath>Resources/turtledive2long.png</itemPath>
+      <itemPath>Resources/turtledive2short.png</itemPath>
+      <itemPath>Resources/turtlelong(1).png</itemPath>
+      <itemPath>Resources/turtleshort(1).png</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>Front/Allegro/al_input.c</itemPath>
+      <itemPath>Front/Allegro/allegro.c</itemPath>
+      <itemPath>Back/cars.c</itemPath>
+      <itemPath>Back/finishline.c</itemPath>
+      <itemPath>Back/frog.c</itemPath>
+      <itemPath>Back/frogger.c</itemPath>
+      <itemPath>Back/level.c</itemPath>
+      <itemPath>Back/loadsave.c</itemPath>
+      <itemPath>Back/logs.c</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>Back/position.c</itemPath>
+      <itemPath>Front/Raspi/rasp_input.c</itemPath>
+      <itemPath>Front/Raspi/raspi.c</itemPath>
+      <itemPath>Back/timer.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerOptionItem>`pkg-config --libs allegro-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_acodec-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_audio-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_color-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_dialog-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_font-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_image-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_main-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_memfile-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_physfs-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_primitives-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_ttf-5`</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs allegro_video-5`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="Back/cars.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/cars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/finishline.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/finishline.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/frog.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/frog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/frogger.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/frogger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/level.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/level.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/loadsave.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/loadsave.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/logs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/logs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/position.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/position.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/timer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/timer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Allegro/al_input.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Front/Allegro/al_input.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Allegro/allegro.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Front/Allegro/allegro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Raspi/disdrv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Raspi/joydrv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Raspi/rasp_input.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Front/Raspi/rasp_input.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Raspi/raspi.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Front/Raspi/raspi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Raspi/termlib.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/Lato-Regular.ttf" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/autolento.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/autopromedio.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/autorapido.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/background.jpeg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/background.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/croc.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/croc2.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/croc3.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/duck.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/fly.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/frog.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/logcorto.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/loglargo.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/logmediano.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/logmuylargo.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/snek.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/sprite.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/truck.jpeg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtledive1long.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtledive1short.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtledive2long.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtledive2short.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtlelong(1).png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtleshort(1).png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Back/cars.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/cars.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/finishline.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/finishline.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/frog.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/frog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/frogger.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/frogger.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/level.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/level.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/loadsave.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/loadsave.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/logs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/logs.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/position.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/position.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Back/timer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Back/timer.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Allegro/al_input.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Front/Allegro/al_input.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Allegro/allegro.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Front/Allegro/allegro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Raspi/disdrv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Raspi/joydrv.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Raspi/rasp_input.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Front/Raspi/rasp_input.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Raspi/raspi.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Front/Raspi/raspi.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Front/Raspi/termlib.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/Lato-Regular.ttf" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/autolento.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/autopromedio.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/autorapido.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/background.jpeg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/background.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/croc.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/croc2.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/croc3.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/duck.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/fly.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/frog.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/logcorto.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/loglargo.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/logmediano.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/logmuylargo.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/snek.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/sprite.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/truck.jpeg" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtledive1long.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtledive1short.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtledive2long.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtledive2short.png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtlelong(1).png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Resources/turtleshort(1).png" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
